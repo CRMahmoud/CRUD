@@ -1,0 +1,75 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+
+        <div class="w-75 mx-auto py-4">
+
+            <h2 class="py-3">Product Managment System</h2>
+
+            <label for="productNameInput">productName :</label>
+            <input type="text" oninput="validateProduct()" id="productNameInput" class="  form-control mb-2">
+            
+            <label for="productPriceInput">productPrice :</label>
+            <input type="number" oninput="validateNumProduct ()" id="productPriceInput" class="form-control mb-2">
+            
+            <label for="productcategoryInput">productcategory :</label>
+            <input type="text" oninput="validateCtegoryProduct ()"  id="productCategoryInput" class="form-control mb-2">
+            
+            <label for="productDescInput">productDesc :</label>
+            <textarea type="text" oninput=" validateDescProduct ()"  id="productDescInput" class="form-control mb-2"></textarea>
+            
+            <button id="addBtn" onclick="addProduct()" class="btn  btn-outline-info">addProduct</button>
+            <button id="updateBtn"  class="btn d-none  btn-outline-info">update</button>
+
+        </div>
+
+
+
+
+
+
+        <div class="w-75 mx-auto p-4"> 
+            <label for="search">search :</label>
+            <input oninput="searchProduct(this.value)" placeholder="search by name" type="text" class="form-control" id="search">
+
+        </div>
+
+     </div>
+
+    <table class="table w-75 mx-auto">
+        <thead>
+            <th>index</th>
+            <th>productName</th>
+            <th>productPrice</th>
+            <th>productCategory</th>
+            <th>productDesc</th>
+            <th>update</th>
+            <th>delete</th>
+
+
+        </thead>
+
+        <tbody id="tableBody">
+           
+        </tbody>
+    </table>
+
+
+    
+
+    
+
+
+
+
+    <script src=" main.js"></script>
+</body>
+
+
+</html>
